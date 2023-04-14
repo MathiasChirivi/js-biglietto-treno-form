@@ -13,6 +13,37 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <section class="d-flex justify-content-center">
+                <h1 class="fw-bolder">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            </section>
+            <section class="bg-warning ">
+            <div class="form d-flex justify-content-center gap-5 pt-3">
+                    <div class="nome d-flex flex-column align-items-center">
+                        <label for="">Nome e Cognome</label>
+                        <input type="text" name="" id="name">
+                    </div>
+                    <div class="kilometri d-flex flex-column align-items-center">
+                        <label for="">KM da percorrere</label>
+                        <input type="text" name="" id="Kilometri">
+                    </div>
+                    <div class="fasciaEta d-flex flex-column align-items-center">
+                        <label for="">Fascia di Età</label>
+                        <select name="age" id="selectAge">
+                            <option value="">Seleziona la tua Età</option>
+                            <option value="Under">Minorenne</option>
+                            <option value="Normal">Maggiorenne</option>
+                            <option value="Over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttons d-flex justify-content-center gap-5 pt-3 pb-3">
+                    <button class="btn" type="button" id="genresButton">Genera</button>
+                    <input class="btn"  type="reset">
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
