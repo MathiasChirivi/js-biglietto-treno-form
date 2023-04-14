@@ -10,11 +10,24 @@
 //
 genresButton.addEventListener(`click`,
     function(){
-        var NomeCognome = document.getElementById("NomePasseggero");
+        var NomeCognome = document.getElementById("name");
         var NomePasseggeroCognome = NomeCognome.value;
         console.log(NomePasseggeroCognome);
 
-       
+        var KilometriDaFare = document.getElementById("Kilometri");
+        var KilometriPercorrere = parseInt(KilometriDaFare.value);
+        console.log(KilometriPercorrere);
+
+        var FasciaEta = document.getElementById("selectAge");
+        var FasciaEtaPass = FasciaEta.value;
+        console.log(FasciaEtaPass);
+
+       var Offerta = 'Tariffa';
+
+
+       if (FasciaEtaPass == 'Under'){
+
+       }
 
         document.getElementById('CodiceRicevuto').innerHTML= Math.floor(Math.random() * 10) + 1;
         document.getElementById('CarrozzaRisiedente').innerHTML = Math.floor(Math.random() * 50) + 1;
