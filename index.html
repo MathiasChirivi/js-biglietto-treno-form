@@ -18,40 +18,41 @@
             <section class="d-flex justify-content-center">
                 <h1 class="fw-bolder">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             </section>
-            <section class="bg-warning ">
+            <section class="bg-success ">
             <div class="d-flex justify-content-center gap-5 pt-3">
                     <div class="nome d-flex flex-column align-items-center">
                         <label for="">Nome e Cognome</label>
-                        <input type="text" name="" id="name">
+                        <input type="text" name="" id="name" placeholder="Nome e Cognome">
                     </div>
                     <div class="kilometri d-flex flex-column align-items-center">
                         <label for="">KM da percorrere</label>
-                        <input type="text" name="" id="Kilometri">
+                        <input type="number" name="" id="Kilometri" placeholder="km da percorrere">
                     </div>
                     <div class="fasciaEta d-flex flex-column align-items-center">
                         <label for="">Fascia di Età</label>
                         <select name="age" id="selectAge">
                             <option value="">Seleziona la tua Età</option>
-                            <option value="Under">Minorenne</option>
-                            <option value="Normal">Maggiorenne</option>
+                            <option value="Under">Tra 0 e 18</option>
+                            <option value="Normal">tra 18 e 65</option>
                             <option value="Over">Over 65</option>
                         </select>
                     </div>
                 </div>
                 <div class="buttons d-flex justify-content-center gap-5 pt-3 pb-3">
                     <button class="btn" type="button" id="genresButton">Genera</button>
-                    <input class="btn"  type="reset">
+                    <input class="btn"  type="reset" id="annulla">
                 </div>
             </section>
         </div>
-        <div class="container">
-            <section>
+        <div class="container hidden" id="dettagli">
+            <section class="bg-success">
+            <section >
                 <div class="d-flex justify-content-center pt-5">
                     <h1 class="fw-bolder">IL TUO BIGLIETTO</h1>
                 </div>
             </section>
-            <section>
-                <div class="d-flex justify-content-start">
+            <section >
+                <div class="d-flex justify-content-start " >
                     <h3>DETTAGLIO PASSEGERI</h3>
                 </div>
                 <hr>
@@ -79,6 +80,7 @@
                 </div>
                 <hr>
             </section>
+        </section>
         </div>
         <script src="./js/main.js"></script>
     </main>
